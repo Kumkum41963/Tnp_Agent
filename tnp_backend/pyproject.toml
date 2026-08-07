@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "tnp-automation-platform"
+version = "1.0.0"
+description = "AI-Powered TNP Database Automation Platform"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic>=2.9",
+    "pydantic-settings",
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "openpyxl>=3.1",
+    "PyMuPDF",
+    "langchain>=0.3",
+    "langchain-ollama",
+    "langchain-core>=0.3",
+    "langgraph",
+    "chromadb",
+    "loguru>=0.7",
+    "python-dotenv>=1.0",
+    "httpx>=0.27",
+    "tqdm>=4.66",
+    "typing_extensions>=4.12",
+    "python-multipart",
+]
+
+[project.optional-dependencies]
+google = [
+    "google-api-python-client",
+    "google-auth",
+    "google-auth-oauthlib",
+]
+dev = [
+    "pytest>=8",
+    "pytest-asyncio>=0.24",
+    "pytest-mock>=3.14",
+    "black>=24",
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "pre-commit>=3.8",
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
