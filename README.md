@@ -1,4 +1,4 @@
-# AI-Powered TNP Database Automation Platform
+# AI-Powered TNP Database Automation Platform [PROJECT STATUS: **ONGOING**]
 
 An intelligent backend for automating the work done by a Training and Placement (TNP) cell when a company sends a new student-data template.
 
@@ -448,5 +448,3 @@ LangGraph Pipeline
 ```
 
 > **Core idea:** The Master Database is the source of truth. AI handles ambiguous tasks, LangGraph orchestrates the workflow, and the system produces a validated company-ready database automatically.
-
-PROJECT STATUS: **ONGOING**
