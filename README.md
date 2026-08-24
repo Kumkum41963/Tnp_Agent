@@ -186,7 +186,7 @@ HTTP/Drive download → local PDF → PDFService → identity matching
 |---|---|
 | Python 3.11+ | Backend implementation |
 | FastAPI | REST API and automatic OpenAPI documentation |
-| Uvicorn | ASGI development server |
+| Uvicorn | Development server |
 | LangGraph | Stateful pipeline orchestration and conditional routing |
 | LangChain | Ollama chat and embedding integrations |
 | Ollama | Local or externally hosted LLM and embedding inference |
@@ -194,7 +194,7 @@ HTTP/Drive download → local PDF → PDFService → identity matching
 | Pydantic v2 | Request, response, domain-model, and structured LLM validation |
 | Pandas | Excel/CSV reading and data normalization |
 | OpenPyXL | Excel report generation and formatting |
-| PyMuPDF (`fitz`) | PDF text extraction |
+| PyMuPDF | PDF text extraction |
 | Google Forms API | Dynamic form creation and response collection |
 | Google Drive API / HTTP | Resume PDF retrieval from individual Drive links |
 | Loguru | Structured application and run-scoped logging |
