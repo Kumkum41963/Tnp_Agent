@@ -289,17 +289,6 @@ tnp_backend/
         └── logging.py           # Loguru configuration and run log context
 ```
 
-### Important data concepts
-
-- **Master Database:** The trusted institutional student database.
-- **Company Database:** A per-company working copy populated from the Master
-  Database and enriched with form and resume data.
-- **Canonical field:** A normalized name such as `enrollment_number`, `email`,
-  `phone_number`, or `cgpa`.
-- **Run:** One complete processing attempt for one company template.
-- **Human review:** A safety stop used when schema or resume identity confidence
-  is not high enough for automatic acceptance.
-
 ---
 
 ## 7. Setup in Your Own Environment
